@@ -18,7 +18,10 @@ Route::get('/', function () {
 
  /*
 |--------------------------------------------------------------------------
-| Client Assessment Routes
+| Admin Routes
 |--------------------------------------------------------------------------
 */
+
+//index list
+Route::get('/admin', 'AdminController@dashboard');
 
