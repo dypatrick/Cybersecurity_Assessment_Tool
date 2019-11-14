@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
  /*
 |--------------------------------------------------------------------------
 | Client Assessment Routes
