@@ -15,13 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['middleware' => ['auth']], function(){
+     /*
+    |--------------------------------------------------------------------------
+    | Admin Routes
+    |--------------------------------------------------------------------------
+    */
 
- /*
-|--------------------------------------------------------------------------
-| Admin Routes
-|--------------------------------------------------------------------------
-*/
+    //index list
+    Route::get('/admin', 'AdminController@dashboard');
+});
 
-//index list
-Route::get('/admin', 'AdminController@dashboard');
 
+Route::get('/logout', function () {
+    Auth::logout();
+    return redirect('/');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

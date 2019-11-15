@@ -13,7 +13,7 @@
                 <div class="col-12 grid-item">
                     <div class="row">
                         <div class="col-sm-3 custom-border-right">
-                            <img src="/img/dueProcess.png" class="img-fluid dashboard-logo">
+                            <img src="/img/complaint.png" class="img-fluid dashboard-logo">
                         </div>
                         <div class="col-sm-8">
                             <div class="row">
@@ -51,7 +51,7 @@
                 <div class="col-12 grid-item">
                     <div class="row">
                         <div class="col-sm-3 custom-border-right">
-                            <img src="/img/complaint.png" class="img-fluid dashboard-logo">
+                            <img src="/img/fiep.png" class="img-fluid dashboard-logo">
                         </div>
                         <div class="col-sm-8">
                             <div class="row">

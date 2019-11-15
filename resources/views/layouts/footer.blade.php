@@ -1,7 +1,7 @@
 <hr>
 <div class="text-center">
-    Special Education DRMS
+    © Copyright 2019 Marshall University
 <br>
-    <small class="text-center">Last update: 07/30/2019</small>
+    <small class="text-center">Last update: 11/14/2019</small>
 </div>
 <br>

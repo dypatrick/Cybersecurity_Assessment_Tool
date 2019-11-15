@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>SBDC Assessment</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -64,7 +64,12 @@
         </style>
     </head>
     <body>
+        <a style="position: absolute;left: 20px;width: 200px;height: 120px;padding-top:10px;" href="{{ url('/') }}">
+                    {{-- {{ config('Bac Son Tech', 'Bac Son Tech') }} --}}
+            <img style="width:200px;height:120px;" src="/img/MarshallLogo.png" alt="marshall">
+        </a>
         <div class="flex-center position-ref full-height">
+            
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -81,18 +86,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    SBDC Assessment Tool
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
+                    {{-- <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a> --}}
                 </div>
             </div>
         </div>
