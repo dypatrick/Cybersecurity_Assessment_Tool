@@ -7,6 +7,7 @@
 @section('content')
     <center><h1>SBDC Assessment Tool</h1></center>
     <br><br>
+    @if(Auth::user()->role == "admin")
     <div class="row">
         <div class="col-6" >
             <a href="">
@@ -83,10 +84,8 @@
                 </div>
             </a>
         </div>
-        
     </div>
-    
-
-
-    </div>
+    @else
+        {{-- this is for creating user dashboard page --}}
+    @endif
 @endsection
