@@ -10,7 +10,7 @@
     @if(Auth::user()->role == "admin")
     <div class="row">
         <div class="col-6" >
-            <a href="">
+            <a href="{{ action('UserController@index') }}">
                 <div class="col-12 grid-item">
                     <div class="row">
                         <div class="col-sm-3 custom-border-right">
@@ -48,7 +48,7 @@
         </div>
 
         <div class="col-6" >
-            <a href="">
+            <a href="{{ action('ResultController@index') }}">
                 <div class="col-12 grid-item">
                     <div class="row">
                         <div class="col-sm-3 custom-border-right">

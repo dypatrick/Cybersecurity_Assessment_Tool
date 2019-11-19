@@ -9,9 +9,6 @@
     // $database = "sdbc";
     // $conn = new mysqli($servername, $username, $password, $database);
     $conn = new PDO('sqlite:D:\Work\Project\Capstone\SBDC\database\database.sqlite');
-    $search = $conn->query("SELECT id FROM users WHERE email = 'nguyen194@live.marshall.edu'");
-    $temp = $search->fetchColumn();
-    echo $temp;
 
     if(!$conn){
         echo $conn->lastErrorMsg();
@@ -44,6 +41,7 @@
 
         $name = $_POST['USER_NAME'];
         $username = $_POST['USERNAME'];
+        $password = $_POST['PASSWORD'];
         $email = $_POST['USER_EMAIL'];
         $company = $_POST['COMPANY'];
         $industry = $_POST['INDUSTRY'];
@@ -61,14 +59,9 @@
         $temp = $search->fetchColumn();
         if ($temp  == 0) {
             //user not exists
-            $sql = "INSERT INTO `users` (name, username, email, company, phone, address, industry, city, state, zipcode, role, isactive) VALUES ('$name', '$username', '$email', '$company', '$phone', '$address', '$industry', '$city', '$state', '$zipcode', 'user', 1)";
-            if ($conn->query($sql) === TRUE) {
-                $user_id = $conn->insert_id;
-                echo "New user record created successfully";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-                $user_id = 0;
-            }
+            $sql = "INSERT INTO `users` (name, username, password, email, company, phone, address, industry, city, state, zipcode, role, isactive) VALUES ('$name', '$username', '$password', '$email', '$company', '$phone', '$address', '$industry', '$city', '$state', '$zipcode', 'user', 1)";
+            $conn->query($sql);
+            $user_id = $conn->lastInsertId();
         } else {
             $user_id = $temp;
         }
