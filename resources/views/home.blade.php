@@ -22,7 +22,7 @@
                                     <h3 class="grid-item-title">User Management</h3>
                                 </div> 
                             </div>
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-sm-6">
                                     <p class="p-dashboard">Open Cases: </p>
                                 </div>
@@ -37,7 +37,7 @@
                                 <div class="col-sm-6">
                                     <p class="p-dashboard">Expedited Cases: </p>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="col-sm-1 d-none d-lg-block">
                             <img src="/img/arrow.png" class="img-arrow">
@@ -55,12 +55,14 @@
                             <img src="/img/fiep.png" class="img-fluid dashboard-logo">
                         </div>
                         <div class="col-sm-8">
+                            
                             <div class="row">
                                 <div class="col-12">
                                     <h3 class="grid-item-title">Assessments Management</h3>
                                 </div> 
                             </div>
-                            <div class="row">
+                            
+                            {{-- <div class="row">
                                 <div class="col-sm-6">
                                     <p class="p-dashboard">Open Cases: </p>
                                 </div>
@@ -75,7 +77,7 @@
                                 <div class="col-sm-6">
                                     <p class="p-dashboard">Expedited Cases: </p>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="col-sm-1 d-none d-lg-block">
                             <img src="/img/arrow.png" class="img-arrow">
