@@ -13,10 +13,10 @@
             <tr>
                 <th>User's name</th>
                 <th>Email</th>
-                <th>Point Earned</th>
-                <th>Passing Point</th>
-                <th>Time Used</th>
-                <th></th>
+                <th width="10%">Point Earned</th>
+                <th width="10%">Passing Point</th>
+                <th width="10%">Time Used</th>
+                <th width="15%"></th>
             </tr>
         </thead>
         <tbody id="myBody">

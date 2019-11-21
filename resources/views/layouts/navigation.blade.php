@@ -11,27 +11,32 @@
       <li class="nav-item mr-1">
         <a class="col-md-12 btn btn-outline-dark d-print-none" href="">Home</a>
       </li>
-      <li class="nav-item mr-1">
-        <div class="dropdown">
-          <a class="col-md-12 btn btn-outline-primary dropdown-toggle d-print-none" href="#" role="button" data-toggle="dropdown">
-            Administration
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="">User Reports</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="">Assessment Reports</a>
+      @if(!is_null(Auth::user()) && Auth::user()->role == "admin")
+        <li class="nav-item mr-1">
+          <div class="dropdown">
+            <a class="col-md-12 btn btn-outline-primary dropdown-toggle d-print-none" href="#" role="button" data-toggle="dropdown">
+              Administration
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="{{ action('UserController@index') }}">User Reports</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{{ action('ResultController@index') }}">Assessment Reports</a>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
+      @endif
       <li class="nav-item mr-1">
         <a class="col-md-12 btn btn-outline-dark d-print-none" href="">Contact Us</a>
       </li>
       <li class="nav-item mr-1">
         <a class="col-md-12 btn btn-outline-dark d-print-none" href="">About</a>
       </li>
-      <li class="nav-item mr-1 float-right">
-          <a class="col-md-12 btn btn-outline-dark d-print-none float-right" href="/logout">Logout</a>
-      </li>
+      @auth
+        <li class="nav-item mr-1 float-right">
+            <a class="col-md-12 btn btn-outline-dark d-print-none float-right" href="/logout">Logout</a>
+        </li>
+      @endauth
+      
     </ul>
   </div>  
 </nav>

@@ -1,3 +1,10 @@
+
+
+@section('title')
+    SBDC Assessment Tool
+@endsection
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -72,6 +79,10 @@
             
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a href="http://127.0.0.1:8000/quiz/index.html">Begin Assessment</a>
+                    <a href="https://wvsbdc.com/resource">Resource</a>
+                    <a href="">About Us</a>
+                    <a href="">Contact</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -86,9 +97,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    SBDC Assessment Tool
+                    Cyber Security Assessment Tool
+                    <br>
+                    
                 </div>
-
+                
                 <div class="links">
                     {{-- <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>

@@ -26,18 +26,15 @@
         </form>
     </div> --}}
 
-    <table id="myTable" class="col-12 auto-filter auto-sort tableDP table-responsive">
+    <table id="myTable" class="col-12 auto-filter auto-sort tableDP">
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Username</th>
                 <th>Email</th>
                 <th>Company</th>
-                <th>Industry</th>
-                <th>Job Title</th>
                 <th>Phone</th>
                 <th>Address</th>
-                <th></th>
+                <th width="15%"></th>
             </tr>
             
         </thead>
@@ -46,19 +43,12 @@
                 @if($user->role != "admin")
                     <tr>
                         <td>{{$user->name}}</td>
-                        <td>{{$user->username}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->company}}</td>
-                        <td>{{$user->industry}}</td>
-                        <td>{{$user->jobtitle}}</td>
                         <td>{{$user->phone}}</td>
                         <td>{{$user->address}}, {{$user->city}}, {{$user->state}} {{$user->zipcode}}</td>
                         <td>
                             <div>
-                                <a href="">
-                                    <button type="button" class="btn btn-primary btn-sm" name="viewUser" id="viewDP" title="View Due Process"><i class="fa fa-eye"></i>
-                                    </button>
-                                </a>
                                 <a href="">
                                     <button type="button" class="btn btn-warning btn-sm" name="editUser" id="editDP" title="Edit Due Process"><i class="fa fa-edit"></i>
                                     </button>
