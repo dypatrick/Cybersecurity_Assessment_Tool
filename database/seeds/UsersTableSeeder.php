@@ -18,9 +18,12 @@ class UsersTableSeeder extends Seeder
         $user->password = Hash::make('password');
         $user->email = "test@gmail.com";
         $user->company = "Marshall";
-        $user->department = "CS";
+        $user->industry = "CS";
         $user->phone = "123-456-7890";
         $user->address = "123 Huntington, WV, 25703";
+        $user->city = "Huntington";
+        $user->state = "WV";
+        $user->zipcode = "25703";
         $user->jobtitle = "Student";
         $user->isactive = true;
         $user->role = "admin";
@@ -32,9 +35,12 @@ class UsersTableSeeder extends Seeder
         $user->password = Hash::make('password');
         $user->email = "test2@gmail.com";
         $user->company = "Marshall";
-        $user->department = "CS";
+        $user->industry = "CS";
         $user->phone = "123-456-7890";
         $user->address = "123 Huntington, WV, 25703";
+        $user->city = "Huntington";
+        $user->state = "WV";
+        $user->zipcode = "25703";
         $user->jobtitle = "Student";
         $user->isactive = true;
         $user->role = "user";

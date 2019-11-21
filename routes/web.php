@@ -28,6 +28,20 @@ Route::group(['middleware' => ['auth']], function(){
 
     //index list
     Route::get('/admin', 'AdminController@dashboard');
+
+    /*
+    |--------------------------------------------------------------------------
+    | User Management Routes
+    |--------------------------------------------------------------------------
+    */
+    Route::get('/user', 'UserController@index');
+
+    /*
+    |--------------------------------------------------------------------------
+    | Result Management Routes
+    |--------------------------------------------------------------------------
+    */
+    Route::get('/result', 'ResultController@index');
 });
 
 

@@ -20,9 +20,12 @@ class CreateUsersTable extends Migration
             $table->string('password')->nullable();
             $table->string('email')->unique();
             $table->string('company')->nullable();
-            $table->string('department')->nullable();
+            $table->string('industry')->nullable();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('zipcode')->nullable();
             $table->string('jobtitle')->nullable();
             $table->string('role')->nullable();
             $table->boolean('isactive')->nullable();
