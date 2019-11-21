@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user', function () {
+    return view('user');
+});
+
 Route::group(['middleware' => ['auth']], function(){
      /*
     |--------------------------------------------------------------------------
