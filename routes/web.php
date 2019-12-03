@@ -11,12 +11,43 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () 
+{
     return view('welcome');
 });
 
-Route::get('/user', function () {
+Route::get('/cyber-home', function () 
+{
+    return view('cyber-home');
+});
+
+Route::get('/welcome', function () 
+{
+    return view('welcome');
+});
+
+Route::get('/cyber-about', function () 
+{
+    return view('cyber-about');
+});
+
+Route::get('/user', function () 
+{
     return view('user');
+});
+Route::get('/cyber-test', function () 
+{
+    return view('cyber-test');
+});
+
+Route::get('/cyber-contact', function () 
+{
+    return view('cyber-contact');
+});
+
+Route::get('/cyber-resources', function () 
+{
+    return view('cyber-resources');
 });
 
 Route::group(['middleware' => ['auth']], function(){
