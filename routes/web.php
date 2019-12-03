@@ -78,7 +78,7 @@ Route::group(['middleware' => ['auth']], function(){
 
 Route::get('/logout', function () {
     Auth::logout();
-    return redirect('/');
+    return redirect('/cyber-home');
 });
 
 Auth::routes();
