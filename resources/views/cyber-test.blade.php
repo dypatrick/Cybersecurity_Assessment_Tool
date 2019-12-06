@@ -21,7 +21,7 @@
             html, body {
                 background-color: #fff;
                 background-image: url("img/background.jpg");
-                background-size: 100% 175vh;
+                background-size: 100% 100vh;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -49,48 +49,43 @@
                 top: 18px;
             }
 
-            .frame {
-                width: 100%;
-                height: 0;
-                padding-bottom: 25%;
-                position: relative;
-                                
-            }
-
-            .frame iframe
+            .frame 
             {
+                width: -750px;
+                height: 150px;
+                image: center;
                 position: absolute;
-                width: 100%;
-                height: 200;
+                margin-top: -175px;
+                margin-left: -250px;
             }
 
             .title {
-                font-size: 84px;
+                font-size: 60px;
+                text-align: center;
                 color: green;
+                margin-top: -350px;
             }
 
-            .links > a {
+            .links a 
+            {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
-                font-weight: 600;
+                font-weight: 600px;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
             .text-center
             {
-                margin-top: 200px;
-                text-align: center;
+                margin-top: -95px;
+                text-align: center;   
             }
         </style>
     </head>
     <body>
-        <a style="position: absolute;left: 20px;width: 200px;height: 120px;padding-top:10px;" href="{{ url('/') }}">
+        <a style="position:absolute;left: 20px;width: 200px;height: 120px;padding-top:10px;" href="{{ url('/') }}">
                     {{-- {{ config('Bac Son Tech', 'Bac Son Tech') }} --}}
             <img style="width:200px;height:120px;" src="/img/MarshallLogo.png" alt="marshall">
         </a>
@@ -114,36 +109,20 @@
                     @endauth
                 </div>
             @endif
+    
+            <div class="frame">
+                <iframe width="275% 250vh" height="375% 150vh" margin-right="150" src="http://127.0.0.1:8000/quiz/index.html" frameborder="0"></iframe>
+                <br>
+            </div>
+
             <div class="heading">
-                <div class="title m-b-md">
+                <div class="title">
                     Cyber Security Assessment
                     <br>
-                    
                 </div>
-
-
-            
-            <div class="frame">
-                   <iframe width="300% 175vh" height="300% 100vh" src="http://127.0.0.1:8000/quiz/index.html" frameborder="0" allowfullscreen></iframe>
-                    <br>
-                    
-                </div>
-                
-                <div class="links">
-                    {{-- <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a> --}}
-                </div>
-            </div>
+            </div>   
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+       
         <div class="text-center">
         <hr>
             © Copyright 2019 Marshall University

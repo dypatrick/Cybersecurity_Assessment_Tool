@@ -21,7 +21,7 @@
             html, body {
                 background-color: #fff;
                 background-image: url("img/background.jpg");
-                background-size: 100% 100vh;
+                background-size: 100% 150vh;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -56,7 +56,7 @@
 
             .title 
             {
-                font-size: 84px;
+                font-size: 60px;
 
             }
 
@@ -78,15 +78,21 @@
             {
                 font-size: 30px;
                 text-align: center;
-                margin-top: 400px;
+                margin-top: 175px;
                 color: green;
             }
 
-            .contact
+            .contact-phone
             {
                 font-size: 30px;
                 text-align: center;
-                margin-top: 75px;
+                margin-top: -45x;
+            }
+            .contact-email
+            {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 15px;
             }
             
             .number
@@ -134,6 +140,7 @@
             .text-center
             {
                 text-align: center;
+                margin-top: -100px;
             } 
         </style>
     </head>
@@ -168,7 +175,7 @@
                     Contact Us  
                 </div>
             
-            <div class="contact">
+            <div class="contact-phone">
                 General Phone
             </div>
 
@@ -179,7 +186,7 @@
                 <br>
             </div>
                 
-            <div class="contact">
+            <div class="contact-email">
                 Email
             </div>
 
@@ -189,7 +196,7 @@
                 <br>
             </div>
 
-            <div class="contact">
+            <div class="contact-address">
                 Address
             </div>
 
@@ -204,15 +211,9 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr>
+      
         <div class="text-center">
+            <hr>
             © Copyright 2019 Marshall University
         <br>
             <small  class="text-center">"Last update: 11/30/2019"</small>

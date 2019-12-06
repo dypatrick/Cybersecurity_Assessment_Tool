@@ -16,7 +16,7 @@
              {
                 background-color: #fff;
                 background-image: url("img/background.jpg");
-                background-size: 100% 250vh;
+                background-size: 100% 215vh;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -50,7 +50,7 @@
 
             .title 
             {
-                font-size: 84px;
+                font-size: 60px;
             }
 
             .links > a {

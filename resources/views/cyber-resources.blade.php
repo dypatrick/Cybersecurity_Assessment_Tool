@@ -20,7 +20,7 @@
         <style>
             html, body {
                 background-image: url("img/background.jpg");
-                background-size: 100% 150vh;
+                background-size: 100% 125vh;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -55,7 +55,7 @@
 
             .title 
             {
-                font-size: 84px;
+                font-size: 60px;
 
             }
 
@@ -75,10 +75,10 @@
             }
             .resources
             {
-                font-size: 84px;
+                font-size: 60px;
                 text-align: center;
                 color:green;
-                margin-top: -350px;
+                margin-top: -550px;
                 
             }
 
@@ -88,7 +88,7 @@
                 font-weight: bold;
                 text-align: left;
                 position: inline;
-                margin-top: 75px;
+                margin-top: -150px;
                 margin-left: 50px;
                 position: absolute;
                 left: 20px;
@@ -99,8 +99,8 @@
                 font-weight: bold;
                 text-align: middle;
                 position: inline;
-                margin-top: 75px;
-                margin-right: 375px;
+                margin-top: -150px;
+                margin-right: 450px;
                 position: absolute;
                 right: 20px;
             }
@@ -109,7 +109,7 @@
                 font-size: 20px;
                 text-align: left;
                 position: inline;
-                margin-top: 230px;
+                margin-top: -50px;
                 margin-left: 50px;
                 position: absolute;
                 left: 20px;
@@ -119,15 +119,15 @@
                 font-size: 20px;
                 text-align: left;
                 position: inline;
-                margin-top: 640px;
-                margin-right: -845px;
+                margin-top: 75px;
+                margin-right: -600px;
                 position: relative;
                 word-wrap: break-word;
-                width: 1050px;
+                width: 825px;
             }
             .text-center
             {
-                margin-top: 200px;
+                margin-top: -150px;
                 text-align: center;
             }
 
@@ -165,13 +165,11 @@
                 </div>
 
                 <div class="start">
-                    <img style="width:100px;height:100px;" src="/img/start.png" alt="start"><br>
                     Start Here
                     <br>
                 </div>
 
                 <div class="download">
-                    <img style="width:100px;height:100px;" src="/img/download.png" alt="download"><br>
                     Downloadable Action Plan
                     <br>
                 </div>
@@ -210,11 +208,7 @@
 
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+       
         <div class="text-center">
         <hr>
             © Copyright 2019 Marshall University
