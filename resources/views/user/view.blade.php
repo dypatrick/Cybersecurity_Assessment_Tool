@@ -7,7 +7,7 @@
 @section('content')
     <center><h6 class="blueLineTitle">Profile of {{$user->name}}</h6></center>
     <label for="name">      Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="name" name="name" maxlength="255" value="{{$user->name}}" disabled/></label><br>
-    <label for="userName">  User Name: <input type="text" id="userName" name="userName" maxlength="255" value="{{$user->username}}" disabled/></label><br>
+    {{-- <label for="userName">  User Name: <input type="text" id="userName" name="userName" maxlength="255" value="{{$user->username}}" disabled/></label><br> --}}
     <label for="email">     Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="email" name="email" maxlength="255" value="{{$user->email}}" disabled/></label><br>
     <label for="jobtitle">  Job Title:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="jobtitle" name="jobtitle" maxlength="255" value="{{$user->jobtitle}}" disabled/></label><br>
     <label for="company">   Company:&nbsp;&nbsp;&nbsp; <input type="text" id="company" name="company" maxlength="255" value="{{$user->company}}" disabled/></label><br>
