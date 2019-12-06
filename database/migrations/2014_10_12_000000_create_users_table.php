@@ -29,6 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('jobtitle')->nullable();
             $table->string('role')->nullable();
             $table->boolean('isactive')->nullable();
+            $table->timestamps();
         });
     }
 

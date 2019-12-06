@@ -16,6 +16,7 @@
                 <th width="10%">Point Earned</th>
                 <th width="10%">Passing Point</th>
                 <th width="10%">Time Used</th>
+                <th width="10%">Status</th>
                 <th width="15%"></th>
             </tr>
         </thead>
@@ -27,14 +28,12 @@
                     <td>{{$result->earned_point}}</td>
                     <td>{{$result->passing_point}}</td>
                     <td>{{$result->time_used}}</td>
+                    <td>{{$result->earned_point >= $result->passing_point ? 'Passed' : 'Failed'}}</td>
                     <td>
                         <div>
-                            <a href="">
+                            {{-- <a href="">
                                 <button type="button" class="btn btn-primary btn-sm" name="viewUser" id="viewDP" title="View Due Process"><i class="fa fa-eye"></i></button>
-                            </a>
-                            <a href="">
-                                <button type="button" class="btn btn-danger btn-sm" name="deleteUser" data-toggle="tolltip" title="Delete This User"><i class="fa fa-trash"></i></button>
-                            </a>
+                            </a> --}}
                         </div>
                     </td>
                 </tr> 
@@ -42,6 +41,8 @@
         </tbody>
     </table>
     
+     <hr>
+                {{-- {!!$pie->html() !!} --}}
     {{-- @if($currentYear >= ($maxYear-1))
         <form method="get" action="{{ action('DueProcessController@create') }}">
             <button type="submit" class="btn btn-primary float-right" title="New Due Process">Create New Due Process</button>
