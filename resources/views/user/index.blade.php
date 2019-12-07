@@ -31,9 +31,7 @@
             <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Company</th>
-                <th>Phone</th>
-                <th>Address</th>
+                <th>Register</th>
                 <th width="15%"></th>
             </tr>
             
@@ -44,17 +42,15 @@
                     <tr>
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
-                        <td>{{$user->company}}</td>
-                        <td>{{$user->phone}}</td>
-                        <td>{{$user->address}}, {{$user->city}}, {{$user->state}} {{$user->zipcode}}</td>
+                        <td>{{is_null($user->password) || $user->password == '' ? 'Unregistered' : 'Registered'}}</td>
+                        {{-- <td>{{$user->phone}}</td>
+                        <td>{{$user->address}}, {{$user->city}}, {{$user->state}} {{$user->zipcode}}</td> --}}
                         <td>
                             <div>
-                                <a href="">
-                                    <button type="button" class="btn btn-warning btn-sm" name="editUser" id="editDP" title="Edit Due Process"><i class="fa fa-edit"></i>
+                                {{-- <a href="{{ action('UserController@show', ['id' => $user->id]) }}"> --}}
+                                <a href="/user/{{$user->id}}">
+                                    <button type="button" class="btn btn-primary" name="viewUser" id="viewDP" title="View User"><i class="fa fa-eye"></i>
                                     </button>
-                                </a>
-                                <a href="">
-                                <button type="button" class="btn btn-danger btn-sm" name="deleteUser" data-toggle="tolltip" title="Delete This User"><i class="fa fa-trash"></i></button>
                                 </a>
                             </div>
                         </td>

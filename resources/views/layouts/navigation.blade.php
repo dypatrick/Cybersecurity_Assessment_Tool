@@ -25,12 +25,6 @@
           </div>
         </li>
       @endif
-      <li class="nav-item mr-1">
-        <a class="col-md-12 btn btn-outline-dark d-print-none" href="">Contact Us</a>
-      </li>
-      <li class="nav-item mr-1">
-        <a class="col-md-12 btn btn-outline-dark d-print-none" href="">About</a>
-      </li>
       @auth
         <li class="nav-item mr-1 float-right">
             <a class="col-md-12 btn btn-outline-dark d-print-none float-right" href="/logout">Logout</a>

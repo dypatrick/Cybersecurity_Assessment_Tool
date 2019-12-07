@@ -102,7 +102,7 @@
         </a>
         <div class="flex-center position-ref full-height">
             
-            <@if (Route::has('login'))
+            @if (Route::has('login'))
                 <div class="top-right links">
                     <a href="http://127.0.0.1:8000/cyber-home">Home</a>
                     <a href="http://127.0.0.1:8000/cyber-about">About Us</a>
@@ -110,7 +110,7 @@
                     <a href="http://127.0.0.1:8000/cyber-contact">Contact</a>
                                             
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Control Panel</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 

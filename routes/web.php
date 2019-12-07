@@ -13,7 +13,7 @@
 
 Route::get('/', function () 
 {
-    return view('welcome');
+    return view('cyber-home');
 });
 
 Route::get('/cyber-home', function () 
@@ -66,7 +66,7 @@ Route::group(['middleware' => ['auth']], function(){
     |--------------------------------------------------------------------------
     */
     Route::get('/user', 'UserController@index');
-
+    Route::get('/user/{user}', 'UserController@show');
     /*
     |--------------------------------------------------------------------------
     | Result Management Routes
