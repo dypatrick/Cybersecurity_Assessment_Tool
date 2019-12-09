@@ -73,6 +73,7 @@ Route::group(['middleware' => ['auth']], function(){
     |--------------------------------------------------------------------------
     */
     Route::get('/result', 'ResultController@index');
+    Route::get('/result/{result}', 'ResultController@show');
 });
 
 
