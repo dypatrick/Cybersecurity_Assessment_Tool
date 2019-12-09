@@ -48,7 +48,7 @@
                     <td>{{$result->earned_point >= $result->passing_point ? 'Passed' : 'Failed'}}</td>
                     <td>
                         <div>
-                            <a href="">
+                            <a href="/result/{{$result->id}}">
                                 <button type="button" class="btn btn-primary btn-sm" name="viewTest" id="viewTest" title="View Assessment"><i class="fa fa-eye"></i></button>
                             </a>
                         </div>
