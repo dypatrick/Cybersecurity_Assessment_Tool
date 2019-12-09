@@ -22,15 +22,15 @@
                                     <h3 class="grid-item-title">User Management</h3>
                                 </div> 
                             </div>
-                            {{-- <div class="row">
-                                <div class="col-sm-6">
-                                    <p class="p-dashboard">Open Cases: </p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="p-dashboard">Closed Cases: </p>
-                                </div>
-                            </div>
                             <div class="row">
+                                <div class="col-sm-12">
+                                    <p class="p-dashboard">There are {{count($thisMonthUsers)}} new users this month.</p>
+                                </div>
+                                {{-- <div class="col-sm-6">
+                                    <p class="p-dashboard">Closed Cases: </p>
+                                </div> --}}
+                            </div>
+                            {{-- <div class="row">
                                 <div class="col-sm-6">
                                     <p class="p-dashboard">Extended Cases: </p>
                                 </div>
@@ -59,6 +59,8 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h3 class="grid-item-title">Assessments Management</h3>
+                                    
+                                    
                                 </div> 
                             </div>
                             

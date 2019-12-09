@@ -41,8 +41,6 @@
         </tbody>
     </table>
     
-     <hr>
-                {{-- {!!$pie->html() !!} --}}
     {{-- @if($currentYear >= ($maxYear-1))
         <form method="get" action="{{ action('DueProcessController@create') }}">
             <button type="submit" class="btn btn-primary float-right" title="New Due Process">Create New Due Process</button>

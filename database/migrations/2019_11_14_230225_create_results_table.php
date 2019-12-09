@@ -19,6 +19,7 @@ class CreateResultsTable extends Migration
             $table->unsignedBigInteger('passing_point');
             $table->string('time_used');
             $table->unsignedBigInteger('user_id');
+            $table->timestamps();
         });
     }
 

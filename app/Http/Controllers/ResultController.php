@@ -12,6 +12,12 @@ class ResultController extends Controller
     {
         $results = Result::all();
         
-        return view('result.index', compact('results', 'pie'));
+        return view('result.index', compact('results'));
+    }
+
+    public function show(Request $request, $id)
+    {
+        $result = Result::find($id);
+        return view('result.view', compact('result'));
     }
 }

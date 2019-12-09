@@ -6,16 +6,55 @@
 
 @section('content')
     <center><h6 class="blueLineTitle">Profile of {{$user->name}}</h6></center>
-    <label for="name">      Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="name" name="name" maxlength="255" value="{{$user->name}}" disabled/></label><br>
-    {{-- <label for="userName">  User Name: <input type="text" id="userName" name="userName" maxlength="255" value="{{$user->username}}" disabled/></label><br> --}}
-    <label for="email">     Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="email" name="email" maxlength="255" value="{{$user->email}}" disabled/></label><br>
-    <label for="jobtitle">  Job Title:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="jobtitle" name="jobtitle" maxlength="255" value="{{$user->jobtitle}}" disabled/></label><br>
-    <label for="company">   Company:&nbsp;&nbsp;&nbsp; <input type="text" id="company" name="company" maxlength="255" value="{{$user->company}}" disabled/></label><br>
-    <label for="industry">  Industry:&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="industry" name="industry" maxlength="255" value="{{$user->industry}}" disabled/></label><br>
-    <label for="phone">     Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="phone" name="phone" maxlength="255" value="{{$user->phone}}" disabled/></label><br>
-    <label for="address">   Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="address" name="address" maxlength="255" value="{{$user->address}}" disabled/></label><br>
-    <label for="city">      City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="city" name="city" maxlength="255" value="{{$user->city}}" disabled/></label><br>
-    <label for="state">     State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="state" name="state" maxlength="255" value="{{$user->state}}" disabled/></label><br>
-    <label for="zipcode">   Zip Code:&nbsp;&nbsp;&nbsp; <input type="text" id="zipcode" name="zipcode" maxlength="255" value="{{$user->zipcode}}" disabled/></label><br>
-    <label for="status">    Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="status" name="status" maxlength="255" value="{{is_null($user->password) || $user->password == '' ? 'Unregistered' : 'Registered'}}" disabled/></label><br>
+    <p class="d-inline">First Name: {{$user->firstname}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Last Name: {{$user->lastname}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Email: {{$user->email}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Job Title: {{$user->jobtitle}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Company: {{$user->company}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Industry: {{$user->industry}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<br><br>
+    <p class="d-inline">Phone: {{$user->phone}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Address: {{$user->address}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">City: {{$user->city}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">State: {{$user->state}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Zipcode: {{$user->zipcode}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <p class="d-inline">Member Status: {{is_null($user->password) || $user->password == '' ? 'Unregistered' : 'Registered'}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <br>
+    <br>
+    <br>
+    <center><h6 class="blueLineTitle">Assessment History of {{$user->name}}</h6></center>
+    <table id="myTable" class="col-12 auto-filter auto-sort tableDP ">
+        <thead>
+            <tr>
+                <th>User's name</th>
+                <th>Email</th>
+                <th width="10%">Point Earned</th>
+                <th width="10%">Passing Point</th>
+                <th width="10%">Time Used</th>
+                <th width="10%">Status</th>
+                <th width="15%"></th>
+            </tr>
+        </thead>
+        <tbody id="myBody">
+            @php
+                $results = $user->results;
+            @endphp
+            @foreach ($results as $result)
+                <tr>
+                    <td>{{$result->user->name}}</td>
+                    <td>{{$result->user->email}}</td>
+                    <td>{{$result->earned_point}}</td>
+                    <td>{{$result->passing_point}}</td>
+                    <td>{{$result->time_used}}</td>
+                    <td>{{$result->earned_point >= $result->passing_point ? 'Passed' : 'Failed'}}</td>
+                    <td>
+                        <div>
+                            <a href="">
+                                <button type="button" class="btn btn-primary btn-sm" name="viewTest" id="viewTest" title="View Assessment"><i class="fa fa-eye"></i></button>
+                            </a>
+                        </div>
+                    </td>
+                </tr> 
+            @endforeach
+        </tbody>
+    </table>
 @endsection
