@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg border-top border-primary shadow mb-2" style="border-width:3px !important;">
-  <a class="navbar-brand" href="/home" >
+  <a class="navbar-brand" href="http://127.0.0.1:8000/home" >
     <img src="{{asset('/img/MarshallLogo.png')}}" width="60" height="40" alt="Marshall Logo">
   </a>
   <button class="col-md-12 navbar-toggler d-print-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
@@ -15,7 +15,7 @@
         <li class="nav-item mr-1">
           <div class="dropdown">
             <a class="col-md-12 btn btn-outline-primary dropdown-toggle d-print-none" href="#" role="button" data-toggle="dropdown">
-              Administration
+              Navigation
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="{{ action('UserController@index') }}">User Reports</a>

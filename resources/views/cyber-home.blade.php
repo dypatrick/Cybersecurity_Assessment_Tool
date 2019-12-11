@@ -15,6 +15,7 @@
             html, body {
                 background-color: #fff;
                 background-image: url("img/background.jpg");
+                background-size: 100% 100vh;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -48,7 +49,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 60px;
             }
 
             .links > a {
@@ -154,9 +155,7 @@
                 © Copyright 2019 Marshall University
             <br>
                 <small class="text-center">Last update: 11/30/2019</small>
-            </div>
-            <br>
-            
+            </div>         
 
             </div>
         </div>
