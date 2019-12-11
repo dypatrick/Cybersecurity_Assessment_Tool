@@ -23,7 +23,7 @@
         <tbody id="myBody">
             @foreach ($results as $result)
                 <tr>
-                    <td>{{$result->user->name}}</td>
+                    <td>{{$result->user->name ?? $result->user->name : ''}}</td>
                     <td>{{$result->user->email}}</td>
                     <td>{{$result->earned_point}}</td>
                     <td>{{$result->passing_point}}</td>
