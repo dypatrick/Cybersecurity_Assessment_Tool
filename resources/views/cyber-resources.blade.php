@@ -88,7 +88,7 @@
                 font-weight: bold;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 75px;                 
+                margin-top: -100px;                 
                 margin-left: 50px;                 
                 position: absolute;                 
                 left: 20px; 
@@ -100,7 +100,7 @@
                 font-weight: bold;                 
                 text-align: middle;                 
                 position: inline;                 
-                margin-top: 75px;                 
+                margin-top: -100px;                 
                 margin-right: 375px;                 
                 position: absolute;                 
                 right: -25px; 
@@ -110,7 +110,7 @@
                 font-size: 20px;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 230px;                 
+                margin-top: -0px;                 
                 margin-left: 50px;                 
                 position: absolute;                 
                 left: 20px; 
@@ -120,7 +120,7 @@
                 font-size: 20px;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 640px;                 
+                margin-top: 165px;                 
                 margin-right: -845px;                 
                 position: relative;                 
                 word-wrap: break-word;                 
@@ -128,7 +128,7 @@
             } 
             .text-center 
             { 
-                margin-top: 200px;                 
+                margin-top: -200px;                 
                 text-align: center; 
             } 
         </style> 
@@ -213,11 +213,11 @@ href="https://smallbusinessbigthreat.com/west-virginia/wp-
 content/uploads/sites/7/2018/05/Quick-Tips-for-Staying-Safe-Online-WV.pdf">Quick Tips for Staying Safe Online</a><br> 
                     <a style="color:green;" 
 href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Security-Breach-One-Page-Recap-WV.pdf">Security Breach Do’s & Don’ts Recap</a><br> 
+content/uploads/sites/7/2018/05/Security-Breach-One-Page-Recap-WV.pdf">Security Breach Dos & Do nots Recap</a><br> 
                     <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2016/10/SC-Canvas-WV.pdf">Cyber Security Small Business 
 Awareness Canvas</a><br> 
-                    <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2018/05/Ransomware-Dos-and-Donts.pdf">Ransomware Do's and 
-Don'ts</a><br> 
+                    <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2018/05/Ransomware-Dos-and-Donts.pdf">Ransomware Dos and 
+Do nots</a><br> 
                    
                 </div> 
  
@@ -234,7 +234,7 @@ Don'ts</a><br>
         <br> 
         <div class="text-center"> 
         <hr> 
-            © Copyright 2019 Marshall University 
+            Copyright 2019 Marshall University 
         <br> 
             <small  class="text-center">"Last update: 11/30/2019"</small> 
         </div> 
