@@ -79,7 +79,8 @@
                 font-size: 84px;                 
                 text-align: center;                 
                 color:green;                 
-                margin-top: -350px;     
+                margin-top: -225px; 
+                position: absolute;    
             } 
  
             .start             
@@ -88,11 +89,33 @@
                 font-weight: bold;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 75px;                 
+                margin-top: -100px;                 
                 margin-left: 50px;                 
                 position: absolute;                 
                 left: 20px; 
             } 
+            .physical
+            {
+                font-size: 30px;                 
+                font-weight: bold;                 
+                text-align: left;                 
+                position: inline;                 
+                margin-top: 50px;                 
+                margin-left: -20px;                 
+                position: relative;                 
+                left: 20px;
+            }
+            .device
+            {
+                font-size: 30px;                 
+                font-weight: bold;                 
+                text-align: left;                 
+                position: inline;                 
+                margin-top: 45px;                 
+                margin-left: -20px;                 
+                position: relative;                 
+                left: 20px;
+            }
 
             .download 
             { 
@@ -100,7 +123,7 @@
                 font-weight: bold;                 
                 text-align: middle;                 
                 position: inline;                 
-                margin-top: 75px;                 
+                margin-top: -100px;                 
                 margin-right: 375px;                 
                 position: absolute;                 
                 right: -25px; 
@@ -110,7 +133,7 @@
                 font-size: 20px;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 230px;                 
+                margin-top: 100px;                 
                 margin-left: 50px;                 
                 position: absolute;                 
                 left: 20px; 
@@ -120,15 +143,23 @@
                 font-size: 20px;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 640px;                 
-                margin-right: -845px;                 
-                position: relative;                 
-                word-wrap: break-word;                 
-                width: 1050px; 
+                margin-top: -120px;                 
+                margin-right: -605px;                 
+                position: relative;                                 
+            } 
+            .social
+            { 
+                font-size: 30px;                 
+                text-align: middle;  
+                font-weight: bold;               
+                position: inline;                 
+                margin-top: 20px;                 
+                margin-left: 0px;                 
+                position: absolute;                                 
             } 
             .text-center 
             { 
-                margin-top: 200px;                 
+                margin-top: -200px;                 
                 text-align: center; 
             } 
         </style> 
@@ -172,53 +203,35 @@
                 </div> 
  
                 <div class="start-description"> 
-                    Evaluate your readiness and learn what the best tools for your business are. 
-                    <br> 
-                    <br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
+                    <a style="color:green;" href="https://cloud.google.com/solutions/modern-password-security-for-users.pdf ">Modern Password Security for Users</a><br> 
+                    <a style="color:green;" href="https://www.ieee-security.org/TC/SP2017/papers/207.pdf ">IEEE Security</a><br> 
+                    <div class= "physical">
+                        Physical and Software Security
+                        <br>
+                    </div>
+                    <a style="color:green;" href="https://people.scs.carleton.ca/~paulv/papers/softprot8a.pdf">Software Protection and Application Security</a><br> 
+                    <a style="color:green;" href="https://nces.ed.gov/pubs98/safetech/chapter5.asp">Protecting Your System</a><br> 
 
-content/uploads/sites/7/2018/10/Cybersecurity-Canvas-West-
-Virginia.pdf">Cybersersecurity Small Business Awareness Canvas</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/10/Cybersecurity-Tools-West-Virginia.pdf">Cybersecurity Tools</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2018/10/Cybersecurity-Glossary-West-
-Virginia.pdf">Cybersecurity Glossary</a><br> 
+                    <div class= "device">
+                        Smart Device Security
+                        <br>
+                    </div>
+                    <a style="color:green;" href="https://arxiv.org/pdf/1903.05362.pdf">Security, Privacy, and Trust for Smart Devices</a><br> 
+                    <a style="color:green;" href="https://www.huawei.com/minisite/iot/img/iot_security_white_paper_2018_v2_en.pdf">IoT Security White Pages</a><br> 
+
                 </div> 
  
                 <div class="download-description"> 
                     <br> 
-                    These PDF format action plans were developed by SBDC and partners to provide <br>valuable  
-                    information to help keep your small business safe.
-                    <br> 
-                    <br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Online-Security-Best-Practices-WV.pdf">Cyber Security Best Practices</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/What-to-do-if-your-business-is-the-victim-of-a-dataor-security-breach-WV.pdf">What To Do if Your Business is the Victim of a Data Breach</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Security-Best-Practices-for-Mobile-Devices-
-WV.pdf">Best Practices for Securing Mobile Devices</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Connected-Vehicle-Security-Best-Practices-WV.pdf">Best 
-Practices for Keeping Your Connected Vehicle Safe</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Quick-Tips-for-Staying-Safe-Online-WV.pdf">Quick Tips for Staying Safe Online</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Security-Breach-One-Page-Recap-WV.pdf">Security Breach Do’s & Don’ts Recap</a><br> 
-                    <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2016/10/SC-Canvas-WV.pdf">Cyber Security Small Business 
-Awareness Canvas</a><br> 
-                    <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2018/05/Ransomware-Dos-and-Donts.pdf">Ransomware Do's and 
-Don'ts</a><br> 
-                   
+                    <a style="color:green;"href="https://arxiv.org/pdf/1903.05362.pdf">Internet and Network Security Fundamentals</a><br> 
+                    <a style="color:green;"href="http://index-of.co.uk/Hacking-Coleccion/34%20-%20Computer,%20Network%20&%20Internet%20Security%20%5B-PUNISHER-%5D.pdf">An Introduction to Security</a><br>
+                    <div class= "social">
+                        Social Media
+                        <br>
+                        <a style="color:green; font-size: 20px; font-weight: normal;"href="http://www.ijsrp.org/research-paper-0115/ijsrp-p3755.pdf">How much Privacy we still have on Social Network</a><br> 
+                        <a style="color:green; font-size: 20px; font-weight: normal;"href="https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the_risks_of_social_networking.pdf">The Risk of Social Networking</a><br> 
+                    </div>
+                    
                 </div> 
  
                 <div class="startlinks"> 
@@ -234,7 +247,7 @@ Don'ts</a><br>
         <br> 
         <div class="text-center"> 
         <hr> 
-            © Copyright 2019 Marshall University 
+            Copyright 2019 Marshall University 
         <br> 
             <small  class="text-center">"Last update: 11/30/2019"</small> 
         </div> 
