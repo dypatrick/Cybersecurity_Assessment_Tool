@@ -110,7 +110,7 @@
                 font-size: 20px;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: -0px;                 
+                margin-top: -50px;                 
                 margin-left: 50px;                 
                 position: absolute;                 
                 left: 20px; 
@@ -120,7 +120,7 @@
                 font-size: 20px;                 
                 text-align: left;                 
                 position: inline;                 
-                margin-top: 165px;                 
+                margin-top: -120px;                 
                 margin-right: -845px;                 
                 position: relative;                 
                 word-wrap: break-word;                 
@@ -172,53 +172,14 @@
                 </div> 
  
                 <div class="start-description"> 
-                    Evaluate your readiness and learn what the best tools for your business are. 
-                    <br> 
-                    <br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-
-content/uploads/sites/7/2018/10/Cybersecurity-Canvas-West-
-Virginia.pdf">Cybersersecurity Small Business Awareness Canvas</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/10/Cybersecurity-Tools-West-Virginia.pdf">Cybersecurity Tools</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2018/10/Cybersecurity-Glossary-West-
-Virginia.pdf">Cybersecurity Glossary</a><br> 
+                    <a style="color:green;" href="https://cloud.google.com/solutions/modern-password-security-for-users.pdf ">Modern Password Security for Users</a><br> 
+                    <a style="color:green;" href="https://www.ieee-security.org/TC/SP2017/papers/207.pdf ">IEEE Security</a><br>  
                 </div> 
  
                 <div class="download-description"> 
                     <br> 
-                    These PDF format action plans were developed by SBDC and partners to provide <br>valuable  
-                    information to help keep your small business safe.
-                    <br> 
-                    <br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Online-Security-Best-Practices-WV.pdf">Cyber Security Best Practices</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/What-to-do-if-your-business-is-the-victim-of-a-dataor-security-breach-WV.pdf">What To Do if Your Business is the Victim of a Data Breach</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Security-Best-Practices-for-Mobile-Devices-
-WV.pdf">Best Practices for Securing Mobile Devices</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Connected-Vehicle-Security-Best-Practices-WV.pdf">Best 
-Practices for Keeping Your Connected Vehicle Safe</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Quick-Tips-for-Staying-Safe-Online-WV.pdf">Quick Tips for Staying Safe Online</a><br> 
-                    <a style="color:green;" 
-href="https://smallbusinessbigthreat.com/west-virginia/wp-
-content/uploads/sites/7/2018/05/Security-Breach-One-Page-Recap-WV.pdf">Security Breach Dos & Do nots Recap</a><br> 
-                    <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2016/10/SC-Canvas-WV.pdf">Cyber Security Small Business 
-Awareness Canvas</a><br> 
-                    <a style="color:green;" href="https://smallbusinessbigthreat.com/west-virginia/wpcontent/uploads/sites/7/2018/05/Ransomware-Dos-and-Donts.pdf">Ransomware Dos and 
-Do nots</a><br> 
-                   
+                    <a style="color:green;"href="https://www.pacnog.org/pacnog10/track3/Security-Part-1.pdf">Internet and Network Security Fundamentals</a><br> 
+                    <a style="color:green;"href="http://index-of.co.uk/Hacking-Coleccion/34%20-%20Computer,%20Network%20&%20Internet%20Security%20%5B-PUNISHER-%5D.pdf">An Introduction to Security</a><br>
                 </div> 
  
                 <div class="startlinks"> 
