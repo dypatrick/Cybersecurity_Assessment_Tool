@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <center><h6 class="blueLineTitle">Profile of {{$user->name}}</h6></center>
+    {{-- <center><h6 class="blueLineTitle">Profile of {{$user->name}}</h6></center>
     <p class="d-inline">First Name: {{$user->firstname}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <p class="d-inline">Last Name: {{$user->lastname}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <p class="d-inline">Email: {{$user->email}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -20,13 +20,13 @@
     <p class="d-inline">Member Status: {{is_null($user->password) || $user->password == '' ? 'Unregistered' : 'Registered'}}</p>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <br>
     <br>
-    <br>
+    <br> --}}
     <center><h6 class="blueLineTitle">Assessment History of {{$user->name}}</h6></center>
     <table id="myTable" class="col-12 auto-filter auto-sort tableDP ">
         <thead>
             <tr>
-                <th>User's name</th>
-                <th>Email</th>
+                <th width="10%">Assessment</th>
+                <th width="10%">Date</th>
                 <th width="10%">Point Earned</th>
                 <th width="10%">Passing Point</th>
                 <th width="10%">Time Used</th>
@@ -40,8 +40,8 @@
             @endphp
             @foreach ($results as $result)
                 <tr>
-                    <td>{{$result->user->name}}</td>
-                    <td>{{$result->user->email}}</td>
+                    <td>Test {{$loop->count}}</td>
+                    <td>{{date_format(date_create("$result->created_at"),'m/d/Y')}}</td>
                     <td>{{$result->earned_point}}</td>
                     <td>{{$result->passing_point}}</td>
                     <td>{{$result->time_used}}</td>

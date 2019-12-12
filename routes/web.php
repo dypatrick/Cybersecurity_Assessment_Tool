@@ -74,6 +74,12 @@ Route::group(['middleware' => ['auth']], function(){
     */
     Route::get('/result', 'ResultController@index');
     Route::get('/result/{result}', 'ResultController@show');
+
+    //Excel Controller
+    Route::get('/export', 'ExcelController@export');
+    
+    //Pie Chart
+    Route::get('/laravel_google_chart', 'LaravelGoogleGraph@index');
 });
 
 

@@ -30,6 +30,10 @@ class UserController extends Controller
             if($request->toDate != null)
                 $users = $users->where('created_at', '<=', $request->toDate);
         }
+
+        if($request->has('year')){
+            $users = $users->where('year', $request->year);
+        }
         return view('user.index', compact('users', 'states'));
     }
 

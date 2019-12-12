@@ -19,7 +19,7 @@
                         <div class="col-sm-8">
                             <div class="row">
                                 <div class="col-12">
-                                    <h3 class="grid-item-title">User Management</h3>
+                                    <h3 class="grid-item-title">Users' Profiles</h3>
                                 </div> 
                             </div>
                             <div class="row">
@@ -58,7 +58,11 @@
                             
                             <div class="row">
                                 <div class="col-12">
+<<<<<<< HEAD
                                     <h3 class="grid-item-title">Assessments Demographic</h3>
+=======
+                                    <h3 class="grid-item-title">Report</h3>
+>>>>>>> dfdece71c36ef29f91694210306a73620c750686
                                     
                                     
                                 </div> 
