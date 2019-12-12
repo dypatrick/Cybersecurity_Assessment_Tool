@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration
             $table->string('zipcode')->nullable();
             $table->string('jobtitle')->nullable();
             $table->string('role')->nullable();
+            $table->unsignedBigInteger('year')->nullable();
             $table->boolean('isactive')->nullable();
             $table->rememberToken();
             $table->timestamps();

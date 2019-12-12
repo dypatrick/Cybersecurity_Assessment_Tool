@@ -30,6 +30,7 @@ class UsersTableSeeder extends Seeder
         $user->jobtitle = "Student";
         $user->isactive = true;
         $user->role = "admin";
+        $user->year = 2017;
         $user->save();
 
         $user = new User();
@@ -49,6 +50,7 @@ class UsersTableSeeder extends Seeder
         $user->jobtitle = "Student";
         $user->isactive = true;
         $user->role = "user";
+        $user->year = 2017;
         $user->save();
 
         foreach(range(1,25) as $i)
@@ -70,6 +72,7 @@ class UsersTableSeeder extends Seeder
             $user->jobtitle = $faker->jobTitle();
             $user->isactive = true;
             $user->role = "user";
+            $user->year = rand(2017,2020);
             $user->save();
         }
 
@@ -92,6 +95,7 @@ class UsersTableSeeder extends Seeder
             $user->jobtitle = $faker->jobTitle();
             $user->isactive = true;
             $user->role = "user";
+            $user->year = rand(2017,2020);
             $user->save();
         }
     }

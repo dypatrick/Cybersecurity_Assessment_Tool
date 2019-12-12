@@ -36,7 +36,12 @@
             </p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="submit" class="btn btn-primary">Sort</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
         </form></center>
+        <br>
+        <center><a href="/export"><button type="button" class="btn btn-primary d-inline" title="New Due Process">Export User Data</button></a></center>
+        
     </div>
     <br>
     {{-- <div>
@@ -84,7 +89,7 @@
                             <div>
                                 {{-- <a href="{{ action('UserController@show', ['id' => $user->id]) }}"> --}}
                                 <a href="/user/{{$user->id}}">
-                                    <button type="button" class="btn btn-primary btn-sm" name="viewUser" id="viewDP" title="View User"><i class="fa fa-eye"></i>
+                                    <button type="button" class="btn btn-primary btn-sm" name="viewUser" id="viewDP" title="View Test Results"><i class="fa fa-eye"></i>
                                     </button>
                                 </a>
                             </div>
@@ -95,11 +100,8 @@
         </tbody>
     </table>
     
-    {{-- @if($currentYear >= ($maxYear-1))
-        <form method="get" action="{{ action('DueProcessController@create') }}">
-            <button type="submit" class="btn btn-primary float-right" title="New Due Process">Create New Due Process</button>
-        </form>
-    @endif --}}
+
+</div>
 @endsection
 
 @section('specificJS')
