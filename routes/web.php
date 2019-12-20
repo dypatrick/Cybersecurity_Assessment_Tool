@@ -35,6 +35,8 @@ Route::get('/user', function ()
 {
     return view('user');
 });
+Route::get('/user/{user}/edit', 'UserController@edit');
+Route::patch('/user', 'UserController@update');
 Route::get('/cyber-test', function () 
 {
     return view('cyber-test');
@@ -77,9 +79,7 @@ Route::group(['middleware' => ['auth']], function(){
 
     //Excel Controller
     Route::get('/export', 'ExcelController@export');
-    
-    //Pie Chart
-    Route::get('/laravel_google_chart', 'LaravelGoogleGraph@index');
+
 });
 
 

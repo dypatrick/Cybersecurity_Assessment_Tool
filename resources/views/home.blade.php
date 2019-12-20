@@ -58,11 +58,7 @@
                             
                             <div class="row">
                                 <div class="col-12">
-<<<<<<< HEAD
-                                    <h3 class="grid-item-title">Assessments Demographic</h3>
-=======
                                     <h3 class="grid-item-title">Report</h3>
->>>>>>> dfdece71c36ef29f91694210306a73620c750686
                                     
                                     
                                 </div> 
@@ -106,7 +102,29 @@
                         <div class="col-sm-8">
                             <div class="row">
                                 <div class="col-12">
-                                    <h3 class="grid-item-title">View Your Profile And Assessment History</h3>
+                                    <h3 class="grid-item-title">Edit Your Profile</h3>
+                                </div> 
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-1 d-none d-lg-block">
+                            <img src="/img/arrow.png" class="img-arrow">
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-6" >
+            <a href="/user/{{Auth::user()->id}}">
+                <div class="col-12 grid-item">
+                    <div class="row">
+                        <div class="col-sm-3 custom-border-right">
+                            <img src="/img/fiep.png" class="img-fluid dashboard-logo">
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="grid-item-title">View Your Assessment History</h3>
                                 </div> 
                             </div>
                             

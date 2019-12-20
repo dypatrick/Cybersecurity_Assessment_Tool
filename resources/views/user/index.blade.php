@@ -44,21 +44,6 @@
         
     </div>
     <br>
-    {{-- <div>
-        <form method="GET" action="">
-            <p>&nbsp;School Year: 
-                <select id="dropYear" name="dropYear" onchange="this.form.submit()">
-                    @foreach($years as $year)
-                        @if($year == $currentYear)
-                            <option selected value="{{$year}}">{{$year}}</option>  
-                        @else
-                            <option value="{{$year}}">{{$year}}</option>  
-                        @endif  
-                    @endforeach
-                </select>
-            </p>
-        </form>
-    </div> --}}
 
     <table id="myTable" class="table table-striped table-bordered">
         <thead>

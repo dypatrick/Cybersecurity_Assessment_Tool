@@ -118,7 +118,7 @@
     </head>
   
     <body>
-        <a style="position: absolute;left: 20px;width: 200px;height: 120px;padding-top:10px;" href="http://127.0.0.1:8000">
+        <a style="position: absolute;left: 20px;width: 200px;height: 120px;padding-top:10px;" href="/">
                     
             <img style="width:200px;height:120px;" src="/img/MarshallLogo.png" alt="marshall">
         </a>
@@ -126,10 +126,10 @@
             
              @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="http://127.0.0.1:8000/cyber-home">Home</a>
-                    <a href="http://127.0.0.1:8000/cyber-about">About Us</a>
-                    <a href="http://127.0.0.1:8000/cyber-resources">Resources</a>
-                    <a href="http://127.0.0.1:8000/cyber-contact">Contact</a>
+                    <a href="/cyber-home">Home</a>
+                    <a href="/cyber-about">About Us</a>
+                    <a href="/cyber-resources">Resources</a>
+                    <a href="/cyber-contact">Contact</a>
                                             
                     @auth
                         <a href="{{ url('/home') }}">Home</a>

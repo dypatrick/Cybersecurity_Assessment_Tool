@@ -42,4 +42,43 @@ class UserController extends Controller
         $user = User::find($id);
         return view('user.view', compact('user'));
     }
+
+    public function edit(Request $request, $id)
+    {
+        $user = User::find($id);
+        //dd($user);
+        return view('user.edit', compact('user'));
+    }
+
+    public function update(Request $request)
+    {
+        //dd($request->all());
+        $user = User::find($request->id);
+        if($request->has('firstname'))
+            $user->firstname = $request->firstname;
+        if($request->has('lastname'))
+            $user->lastname = $request->lastname;
+        if($request->has('email'))
+            $user->email = $request->email;
+        if($request->has('jobtitle'))
+            $user->jobtitle = $request->jobtitle;
+        if($request->has('company'))
+            $user->company = $request->company;
+        if($request->has('industry'))
+            $user->industry = $request->industry;
+        if($request->has('phone'))
+            $user->phone = $request->phone;
+        if($request->has('address'))
+            $user->address = $request->address;
+        if($request->has('city'))
+            $user->city = $request->city;
+        if($request->has('state'))
+            $user->state = $request->state;
+        if($request->has('zipcode'))
+            $user->zipcode = $request->zipcode;
+        $user->save();
+
+        return redirect()->back();
+
+    }
 }
